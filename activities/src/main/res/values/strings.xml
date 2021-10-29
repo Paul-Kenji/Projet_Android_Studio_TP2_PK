@@ -6,4 +6,5 @@
     <string name="nombre_2">nombre 2</string>
     <string name="calculer">Calculer</string>
     <string name="button2_description">description deuxieme bouton</string>
+    <string name="error_type">error input type</string>
 </resources>

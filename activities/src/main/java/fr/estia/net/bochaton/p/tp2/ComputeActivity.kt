@@ -34,7 +34,7 @@ class ComputeActivity : AppCompatActivity(), TextWatcher {
                 val e = c + d
                 res.text = e.toString()
             } else {
-                res.text = "error input type"
+                res.text = getString(R.string.error_type)
             }
         }
     }
