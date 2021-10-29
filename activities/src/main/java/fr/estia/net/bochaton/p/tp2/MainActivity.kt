@@ -23,11 +23,8 @@ class MainActivity : AppCompatActivity() {
         // Avez-vous compris le danger des lateInit ? -> On peut compiler mais ça fera planter l'appli
         clickButton.setOnClickListener {
             nbClick++
-            if (nbClick <= 5) {
-                textV.text = getString(R.string.click_Me, nbClick)
-            } else {
-                clickButton.isEnabled = false
-            }
+            textV.text = getString(R.string.click_Me, nbClick)
+            clickButton.isEnabled = nbClick <= 4
         }
         computeButton.setOnClickListener {
             val intent = Intent(baseContext, ComputeActivity::class.java)

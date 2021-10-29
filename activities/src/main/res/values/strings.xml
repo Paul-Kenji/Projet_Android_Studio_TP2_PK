@@ -8,5 +8,7 @@
     <string name="button2_description">description deuxieme bouton</string>
     <string name="error_type">error input type</string>
     <string name="click_Me">Vous avez clické %d fois</string>
+    <string name="text_btn">Faire un calcul</string>
+    <string name="txt_btn_clic">Cliquez moi</string>
 
 </resources>
