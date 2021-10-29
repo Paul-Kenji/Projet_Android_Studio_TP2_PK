@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.text.isDigitsOnly
 
 class ComputeActivity : AppCompatActivity(), TextWatcher {
     private lateinit var f1: EditText
@@ -25,10 +26,16 @@ class ComputeActivity : AppCompatActivity(), TextWatcher {
         f1.addTextChangedListener(this)
         f2.addTextChangedListener(this)
         resultButton.setOnClickListener {
-            val a = f1.text.toString().toInt()
-            val b = f2.text.toString().toInt()
-            val c = a + b
-            res.text = c.toString()
+            val a = f1.text.toString()
+            val b = f2.text.toString()
+            if (a.isDigitsOnly() && b.isDigitsOnly()) {
+                val c = a.toInt()
+                val d = b.toInt()
+                val e = c + d
+                res.text = e.toString()
+            } else {
+                res.text = "error input type"
+            }
         }
     }
 
