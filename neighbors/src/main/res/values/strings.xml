@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TP3-voisin</string>
+    <string name="dialog_title">Confirmation</string>
+    <string name="oui">oui</string>
+    <string name="non">non</string>
+    <string name="image_view_description">image view description</string>
+    <string name="mon_voisin_text">Mon voisin</string>
+    <string name="button_description">button description</string>
+</resources>
