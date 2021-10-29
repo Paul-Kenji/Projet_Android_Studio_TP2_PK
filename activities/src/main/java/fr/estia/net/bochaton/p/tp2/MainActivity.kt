@@ -18,14 +18,13 @@ class MainActivity : AppCompatActivity() {
         textV = findViewById(R.id.txt_click_me)
         clickButton = findViewById(R.id.btn_click_me)
         computeButton = findViewById(R.id.btn_compute)
-        // Qu'avez-vous observez ? -> Pas d'erreur de compilation ( en comentant la ligne d'initialisation de "clickButton").
+        // Qu'avez-vous observez ? -> Pas d'erreur de compilation mais à l'execution( en comentant la ligne d'initialisation de "clickButton").
         // Pourquoi l'application a planté ? -> Car on utilise clickButton sans l'avoir initialisé.
         // Avez-vous compris le danger des lateInit ? -> On peut compiler mais ça fera planter l'appli
         clickButton.setOnClickListener {
             nbClick++
             if (nbClick <= 5) {
-                val newText = "Vous avez cliquez $nbClick fois"
-                textV.text = newText
+                textV.text = getString(R.string.click_Me, nbClick)
             } else {
                 clickButton.isEnabled = false
             }

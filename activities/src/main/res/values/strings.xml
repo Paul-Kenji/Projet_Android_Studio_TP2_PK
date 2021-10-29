@@ -7,4 +7,6 @@
     <string name="calculer">Calculer</string>
     <string name="button2_description">description deuxieme bouton</string>
     <string name="error_type">error input type</string>
+    <string name="click_Me">Vous avez clické %d fois</string>
+
 </resources>
