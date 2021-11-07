@@ -75,7 +75,7 @@ class AddNeighbourFragment : Fragment(), View.OnClickListener, TextWatcher {
                 ) {
                     conditionTel = true
                 } else {
-                    fieldSTxtTel.error = "numéro invalide"
+                    fieldSTxtTel.error = "format expected 0X XX XX XX XX XX"
                 }
                 if (conditionMail && conditionTel && conditionUrlImage && conditionUrlWeb) {
                     val neighbor = Neighbor(id, nom, image, adr, tel, apm, false, web)
