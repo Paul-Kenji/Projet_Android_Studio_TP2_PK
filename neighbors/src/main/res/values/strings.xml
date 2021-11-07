@@ -6,4 +6,15 @@
     <string name="image_view_description">image view description</string>
     <string name="mon_voisin_text">Mon voisin</string>
     <string name="button_description">button description</string>
+    <string name="edittext_image">Image</string>
+    <string name="edittext_nom">Nom</string>
+    <string name="edittext_tel">Téléphone</string>
+    <string name="edittext_web">Website</string>
+    <string name="edittext_adr">Adress</string>
+    <string name="edittext_apm">A propos de moi</string>
+    <string name="fab_content_desc">description gloating bouton</string>
+    <string name="enregistrer_button_text">Enregistrer</string>
+    <string name="url_invalid">URL invalid</string>
+    <string name="ListNeighborsFragment_name">Liste des voisins</string>
+    <string name="AddNeighborFragment_name">Nouveau voisin</string>
 </resources>

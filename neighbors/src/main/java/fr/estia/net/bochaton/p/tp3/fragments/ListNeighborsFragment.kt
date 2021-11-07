@@ -9,6 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import fr.estia.net.bochaton.p.tp3.NavigationListener
 import fr.estia.net.bochaton.p.tp3.R
 import fr.estia.net.bochaton.p.tp3.adapters.ListNeighborHandler
 import fr.estia.net.bochaton.p.tp3.adapters.ListNeighborsAdapter
@@ -16,8 +18,9 @@ import fr.estia.net.bochaton.p.tp3.data.NeighborRepository
 import fr.estia.net.bochaton.p.tp3.data.service.DummyNeighborApiService
 import fr.estia.net.bochaton.p.tp3.models.Neighbor
 
-class ListNeighborsFragment : Fragment(), ListNeighborHandler {
+class ListNeighborsFragment : Fragment(), View.OnClickListener, ListNeighborHandler {
     private lateinit var recyclerView: RecyclerView
+    private lateinit var button: FloatingActionButton
 
     /**
      * Fonction permettant de définir une vue à attacher à un fragment
@@ -26,6 +29,7 @@ class ListNeighborsFragment : Fragment(), ListNeighborHandler {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
+
     ): View? {
         val view = inflater.inflate(R.layout.list_neighbors_fragment, container, false)
         recyclerView = view.findViewById(R.id.neighbors_list)
@@ -36,6 +40,13 @@ class ListNeighborsFragment : Fragment(), ListNeighborHandler {
                 DividerItemDecoration.VERTICAL
             )
         )
+        button = view.findViewById(R.id.add_button)
+        button.setOnClickListener {
+            (activity as? NavigationListener)?.let {
+                it.showFragment(AddNeighbourFragment())
+                it.updateTitle(R.string.AddNeighborFragment_name)
+            }
+        }
         return view
     }
 
@@ -69,4 +80,6 @@ class ListNeighborsFragment : Fragment(), ListNeighborHandler {
         val adapter = ListNeighborsAdapter(neighbors, this)
         recyclerView.adapter = adapter
     }
+
+    override fun onClick(v: View?) {}
 }
