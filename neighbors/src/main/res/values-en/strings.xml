@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TP3-neighbor</string>
+    <string name="dialog_title">Confirmation</string>
+    <string name="oui">yes</string>
+    <string name="non">no</string>
+    <string name="image_view_description">image view description</string>
+    <string name="mon_voisin_text">my neighbor</string>
+    <string name="button_description">button description</string>
+    <string name="edittext_image">Image</string>
+    <string name="edittext_nom">Name</string>
+    <string name="edittext_tel">phone</string>
+    <string name="edittext_web">Website</string>
+    <string name="edittext_adr">Address</string>
+    <string name="edittext_apm">About me</string>
+    <string name="fab_content_desc">description gloating button</string>
+    <string name="save_button_text">Save</string>
+    <string name="url_invalid">URL invalid</string>
+    <string name="ListNeighborsFragment_name">Neighbor list</string>
+    <string name="AddNeighborFragment_name">New Neighbor</string>
+    <string name="image_add_button">add button image</string>
+</resources>

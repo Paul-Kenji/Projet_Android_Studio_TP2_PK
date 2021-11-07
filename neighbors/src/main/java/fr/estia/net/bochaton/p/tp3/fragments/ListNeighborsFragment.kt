@@ -29,8 +29,8 @@ class ListNeighborsFragment : Fragment(), View.OnClickListener, ListNeighborHand
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-
     ): View? {
+        (activity as? NavigationListener)?.updateTitle(R.string.ListNeighborsFragment_name)
         val view = inflater.inflate(R.layout.list_neighbors_fragment, container, false)
         recyclerView = view.findViewById(R.id.neighbors_list)
         recyclerView.layoutManager = LinearLayoutManager(context)

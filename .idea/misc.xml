@@ -6,13 +6,15 @@
         <entry key="..\:/Users/p.bochaton/AndroidStudioProjects/TP1/activities/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/p.bochaton/AndroidStudioProjects/TP1/activities/src/main/res/layout/compute_activity.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/p.bochaton/AndroidStudioProjects/TP1/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/p.bochaton/AndroidStudioProjects/TP1/neighbors/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1359375" />
+        <entry key="..\:/Users/p.bochaton/AndroidStudioProjects/TP1/neighbors/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.1359375" />
         <entry key="..\:/Users/p.bochaton/AndroidStudioProjects/TP1/neighbors/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/p.bochaton/AndroidStudioProjects/TP1/neighbors/src/main/res/drawable/ic_baseline_person_add_24.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/p.bochaton/AndroidStudioProjects/TP1/neighbors/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/p.bochaton/AndroidStudioProjects/TP1/neighbors/src/main/res/drawable/ic_launcher_background.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/p.bochaton/AndroidStudioProjects/TP1/neighbors/src/main/res/layout/activity_main.xml" value="0.152" />
         <entry key="..\:/Users/p.bochaton/AndroidStudioProjects/TP1/neighbors/src/main/res/layout/add_neighbor.xml" value="0.4" />
-        <entry key="..\:/Users/p.bochaton/AndroidStudioProjects/TP1/neighbors/src/main/res/layout/list_neighbors_fragment.xml" value="0.4" />
+        <entry key="..\:/Users/p.bochaton/AndroidStudioProjects/TP1/neighbors/src/main/res/layout/list_neighbors_fragment.xml" value="0.2994791666666667" />
         <entry key="..\:/Users/p.bochaton/AndroidStudioProjects/TP1/neighbors/src/main/res/layout/neighbor_item.xml" value="0.115625" />
       </map>
     </option>
